@@ -16,7 +16,7 @@
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
 import { execute } from '../exec_run.js';
-import { checkPathExists, escapePath } from '../../utils/fs_helper.js';
+import { checkPathExists } from '../../utils/fs_helper.js';
 
 export const getNamespace = async (networkDirectory: string): Promise<string> => {
   const data = await fs.readFile(path.join(networkDirectory, 'namespace'), 'utf-8');
@@ -58,7 +58,7 @@ export const cleanUp = async (namespace: string, networkId: string): Promise<voi
 };
 
 export const deleteDirUnshare = async (dirPath: string, networkName: string): Promise<void> => {
-  const args = ['unshare', 'rm', '-r', escapePath(dirPath)];
+  const args = ['unshare', 'rm', '-r', dirPath];
   const { code } = await execute(undefined, 'podman', args, 'NETWORK_CLEANUP', networkName, true);
   if (code !== 0) throw new Error('Not able to deleted directory');
 };
