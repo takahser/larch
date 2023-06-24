@@ -34,7 +34,7 @@ export const cleanUp = async (namespace: string, networkId: string): Promise<voi
   ];
   const { code, stdout } = await execute(undefined, 'podman', args, 'NETWORK_CLEANUP', networkId, true);
   if (code !== 0 || stdout === null) return;
-  const removePodArgs = ['pod', 'rm', '-f', ...stdout.toString('utf-8').split('\n')];
+  const removePodArgs = ['pod', 'rm', '-f', ...stdout.toString('utf-8').split('\n').map((pod) => pod.trim())];
   const { code: removePodCode } = await execute(
     undefined,
     'podman',
