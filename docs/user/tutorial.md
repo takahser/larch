@@ -14,13 +14,23 @@ This tutorial will consist of creating template and network from the created tem
     - Basically we added two nodes with validator enabled, now click next
 8. Now we are in `Parachain Configuration` section
     - click on `+` icon button to add new parachain config.
-    - set Parachain ID as `100`
+    - set Parachain ID as `100`, (it can be any number)
     - set collator name as `collator01` and collator command: `polkadot-parachain`
     - now click on next
 9. We can skip HRMP for this tutorial so we select next
 10. Now we are in Test configuration section
-  a. the configuration will have description and network field prefilled (from network name)
-  b. append the given configuration below the existing config.
+    - the configuration will have description and network field prefilled (from network name)
+    - append the given configuration below the existing config.
+11. Click on save to save the template
+12. Now template will be visible in Templates page, now click on create button to create network for evaluation
+    - A dialog box will open, in this add network name and click confirm to start the network orchestration process.
+    - Loader will start once the process is started application will redirect to networks page, and it would be in creating state
+13. To view the command and execution logs, click on eye icon, this will redirect to executions page with network name filtered
+    - To view command, click on command button this will open a modal with the command and other metadata
+    - To view logs/output, click on output button this will open a modal with the standard and error stream output along with other metadata
+14. The preceding step conclude the network creation.
+
+
 ```
 Creds: config
 
