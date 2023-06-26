@@ -74,8 +74,12 @@ interface Template {
 }
 
 export const DEFAULT_IMAGES = [
-  "docker.io/parity/polkadot-parachain:latest"
+  "docker.io/parity/polkadot:latest"
 ];
+
+export const DEFAULT_PARACHAIN_IMAGES = [
+  "docker.io/parity/polkadot-parachain:latest"
+]
 
 export const DEFAULT_ARGUMENTS = ["-lparachain=debug"];
 

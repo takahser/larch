@@ -17,7 +17,7 @@ import { FC } from "react";
 import { useLocation } from "react-router-dom";
 import { Combobox } from '@headlessui/react'
 import { Button } from "src/components/Button";
-import { useCreateTemplate, DEFAULT_ARGUMENTS, DEFAULT_IMAGES } from "src/store/CreateTemplate";
+import { useCreateTemplate, DEFAULT_ARGUMENTS, DEFAULT_PARACHAIN_IMAGES } from "src/store/CreateTemplate";
 import { ReactComponent as IconAdd } from "src/assets/Add.svg";
 import { ReactComponent as IconTrash } from "src/assets/Trash.svg";
 
@@ -89,7 +89,7 @@ const Step03: FC<Step03Props> = ({ onNextStep, onPreviousStep }) => {
                         add_to_genesis: true,
                         collator: {
                           name: "",
-                          image: DEFAULT_IMAGES[0],
+                          image: DEFAULT_PARACHAIN_IMAGES[0],
                           command: "",
                           args: [DEFAULT_ARGUMENTS[0]],
                         },
@@ -199,7 +199,7 @@ const Step03: FC<Step03Props> = ({ onNextStep, onPreviousStep }) => {
                                   }
                                 />
                                 <Combobox.Options className="absolute bg-larch-dark_2 border-2 border-dark-700 rounded-md flex flex-col gap-3 w-full mt-2 p-3 z-10">
-                                  {DEFAULT_IMAGES.map((image) => (
+                                  {DEFAULT_PARACHAIN_IMAGES.map((image) => (
                                     <Combobox.Option
                                       className="hover:bg-larch-dark_3 p-2 rounded-md cursor-pointer"
                                       key={image}

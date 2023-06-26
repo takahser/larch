@@ -8,14 +8,14 @@ This tutorial will consist of creating template and network from the created tem
 4. Open `http://localhost:9000` in the browser
 5. Click on `Network Template +` button, present at the top of page
 6. Name the template: `sample-template`, leave other options as it is and click `next` at the bottom of the page
-7. Some of the fields are prefilled, now in the `Nodes` sections, add value `alice` in the `name` field, select `validator` option, click `+` icon button present inside the `Nodes` section, this will add new node input section
-  a. In the new node box, add value `bob` in the `name` field, select `validator` option, and again click on `+` icon button
-  b. Basically we added two nodes with validator enabled, now click next
+7. Some of the fields are prefilled, now in the `Nodes` sections, add value `alice` in the `name` field, select `validator` option, click `+` icon button present inside the `Nodes` section, this will add new node input section.
+    - In the new node box, add value `bob` in the `name` field, select `validator` option, and again click on `+` icon button
+    - Basically we added two nodes with validator enabled, now click next
 8. Now we are in Parachains section
-  a. click on `+` icon button to add new parachain config.
-  b. set Parachain ID as `100`
-  c. set collator name as `collator01` and collator command: `polkadot-parachain`
-  d. now click on next
+    - click on `+` icon button to add new parachain config.
+    - set Parachain ID as `100`
+    - set collator name as `collator01` and collator command: `polkadot-parachain`
+    - now click on next
 9. We can skip HRMP for this tutorial so we select next
 10. Now we are in Test configuration section
   a. the configuration will have description and network field prefilled (from network name)
