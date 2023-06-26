@@ -48,7 +48,7 @@ Options:
 
 ### Docs
 
-- [Docs](/docs)
+- [Docs](/docs/index.md)
 
 ## License
 
