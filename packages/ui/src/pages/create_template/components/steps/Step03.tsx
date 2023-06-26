@@ -108,11 +108,11 @@ const Step03: FC<Step03Props> = ({ onNextStep, onPreviousStep }) => {
                         </span>
                         <input
                           className="flex-grow max-w-[300px] active:ring-larch-pink focus:ring-larch-pink bg-larch-dark_2 focus:bg-larch-dark border-dark-700 border-2 rounded-md"
-                          type="text"
+                          type="number"
                           value={parachain.id}
                           onChange={(element) =>
                             updateParachains(index, {
-                              id: element.target.value,
+                              id: parseInt(element.target.value, 10),
                             })
                           }
                         />

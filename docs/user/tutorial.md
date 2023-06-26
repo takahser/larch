@@ -8,10 +8,11 @@ This tutorial will consist of creating template and network from the created tem
 4. Open `http://localhost:9000` in the browser
 5. Click on `Network Template +` button, present at the top of page
 6. Name the template: `sample-template`, leave other options as it is and click `next` at the bottom of the page
-7. Some of the fields are prefilled, now in the `Nodes` sections, add value `alice` in the `name` field, select `validator` option, click `+` icon button present inside the `Nodes` section, this will add new node input section.
+7. We are in `Relaychain Configuration` section, Some of the fields are prefilled, now in the `Nodes` sub sections, 
+    - add value `alice` in the `name` field, select `validator` option, click `+` icon button present inside the `Nodes` sub section, this will add new node input section.
     - In the new node box, add value `bob` in the `name` field, select `validator` option, and again click on `+` icon button
     - Basically we added two nodes with validator enabled, now click next
-8. Now we are in Parachains section
+8. Now we are in `Parachain Configuration` section
     - click on `+` icon button to add new parachain config.
     - set Parachain ID as `100`
     - set collator name as `collator01` and collator command: `polkadot-parachain`
