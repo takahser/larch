@@ -86,7 +86,7 @@ const Step03: FC<Step03Props> = ({ onNextStep, onPreviousStep }) => {
                       ...paraChainList,
                       {
                         id: "",
-                        add_to_genesis: false,
+                        add_to_genesis: true,
                         collator: {
                           name: "",
                           image: DEFAULT_IMAGES[0],
