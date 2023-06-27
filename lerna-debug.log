@@ -1,0 +1,10 @@
+0 silly argv {
+0 silly argv   _: [ 'run' ],
+0 silly argv   lernaVersion: '7.0.2',
+0 silly argv   '$0': '/home/quark/workspace/projects/parity/larch/node_modules/.bin/lerna',
+0 silly argv   script: 'test'
+0 silly argv }
+1 notice cli v7.0.2
+2 verbose packageConfigs Resolving packages based on package.json "workspaces" configuration.
+3 verbose rootPath /home/quark/workspace/projects/parity/larch
+4 error

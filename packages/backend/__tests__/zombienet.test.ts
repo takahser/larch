@@ -13,14 +13,12 @@
  * along with Larch.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { defineConfig } from 'vitest/config'
+import { test, describe, expect } from 'vitest'
+import { generateZombienetCliOptions } from '../src/modules/zombienet';
 
-export default defineConfig({
-  test: {
-    testTimeout:5000000,
-    exclude: ['__tests__/assets',
-    // '__tests__/utils.test.ts', 
-    // '__tests__/routes.test.ts'
-  ],
-  },
+describe('Zombienet CLI options', () => {
+  test("should get version options",  () => {
+    const options = generateZombienetCliOptions({ version: true})
+    expect(options).toStrictEqual(['version']);
+  })
 })

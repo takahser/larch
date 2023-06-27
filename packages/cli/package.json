@@ -12,8 +12,7 @@
     "lint": "eslint --ext .ts .",
     "package": "pkg . -o ../../bins/larch",
     "package:linux": "pkg . -o ../../bins/larch-linux -t node18-linux",
-    "package:macos": "pkg . -o ../../bins/larch-macos -t node18-macos",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package:macos": "pkg . -o ../../bins/larch-macos -t node18-macos"
   },
   "keywords": [],
   "engines": {

@@ -67,7 +67,7 @@ const checkAndDownloadZombienetBinary = async (zombienetVersion: string): Promis
   console.debug('Done providing execute permission to Zombienet binary');
 };
 
-const generateZombienetCliOptions = (zombienetCliOptions: ZombienetCliOptions): Array<string> => {
+export const generateZombienetCliOptions = (zombienetCliOptions: ZombienetCliOptions): Array<string> => {
   const optionsList: Array<string> = [];
   if (zombienetCliOptions.version) {
     optionsList.push('version');
